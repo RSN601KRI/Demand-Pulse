@@ -22,16 +22,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="relative w-12 h-12">
-              <div className="absolute inset-0 bg-walmart-gradient rounded-xl flex items-center justify-center animate-pulse-slow shadow-lg">
-                <ShoppingCart className="w-6 h-6 text-white animate-float" />
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="relative w-12 h-12 group-hover:scale-110 transition-transform duration-300">
+              <div className="absolute inset-0 bg-walmart-gradient rounded-xl flex items-center justify-center animate-pulse-slow shadow-lg group-hover:shadow-2xl transition-shadow duration-300">
+                <ShoppingCart className="w-6 h-6 text-white animate-float group-hover:animate-bounce" />
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full animate-bounce"></div>
-              <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full animate-bounce group-hover:animate-pulse"></div>
+              <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-green-400 rounded-full animate-ping group-hover:scale-125 transition-transform duration-300"></div>
             </div>
             <div>
-              <h1 className="text-2xl font-cursive font-bold text-white">
+              <h1 className="text-2xl font-cursive font-bold text-white group-hover:text-walmart-yellow transition-colors duration-300">
                 DemandPulse
               </h1>
             </div>
@@ -45,11 +45,11 @@ const Navbar = () => {
                 <Link key={item.name} to={item.path}>
                   <Button
                     variant="ghost"
-                    className={`text-white hover:bg-white/10 hover:text-walmart-blue transition-all duration-300 ${
-                      isActive(item.path) ? 'bg-walmart-blue text-white' : ''
+                    className={`text-white hover:bg-white/10 hover:text-walmart-blue transition-all duration-300 hover:scale-110 active:scale-95 ${
+                      isActive(item.path) ? 'bg-walmart-blue text-white scale-105' : ''
                     }`}
                   >
-                    <Icon className="w-4 h-4 mr-2" />
+                    <Icon className="w-4 h-4 mr-2 hover:animate-pulse" />
                     {item.name}
                   </Button>
                 </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link to="/login">
-              <Button className="bg-walmart-gradient hover:scale-105 transition-transform duration-300 shadow-lg">
+              <Button className="bg-walmart-gradient hover:scale-110 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-2xl">
                 Get Started
               </Button>
             </Link>
@@ -72,16 +72,16 @@ const Navbar = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:bg-white/10"
+              className="text-white hover:bg-white/10 hover:scale-110 active:scale-95 transition-all duration-300"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? <X className="w-6 h-6 animate-spin" /> : <Menu className="w-6 h-6 hover:animate-pulse" />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden glass-effect border-t border-white/10 mt-2 rounded-lg p-4">
+          <div className="md:hidden glass-effect border-t border-white/10 mt-2 rounded-lg p-4 animate-fade-in">
             <div className="space-y-3">
               {navItems.map((item) => {
                 const Icon = item.icon;
@@ -89,18 +89,18 @@ const Navbar = () => {
                   <Link key={item.name} to={item.path} onClick={() => setIsMenuOpen(false)}>
                     <Button
                       variant="ghost"
-                      className={`w-full justify-start text-white hover:bg-white/10 hover:text-walmart-blue ${
+                      className={`w-full justify-start text-white hover:bg-white/10 hover:text-walmart-blue hover:scale-105 active:scale-95 transition-all duration-300 ${
                         isActive(item.path) ? 'bg-walmart-blue text-white' : ''
                       }`}
                     >
-                      <Icon className="w-4 h-4 mr-2" />
+                      <Icon className="w-4 h-4 mr-2 hover:animate-pulse" />
                       {item.name}
                     </Button>
                   </Link>
                 );
               })}
               <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-                <Button className="w-full bg-walmart-gradient mt-4">
+                <Button className="w-full bg-walmart-gradient mt-4 hover:scale-105 active:scale-95 transition-all duration-300">
                   Get Started
                 </Button>
               </Link>

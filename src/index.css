@@ -59,6 +59,11 @@
 
   .glass-effect {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
+    transition: all 0.3s ease;
+  }
+
+  .glass-effect:hover {
+    @apply bg-white/15 border-white/30;
   }
 
   .walmart-gradient {
@@ -75,8 +80,39 @@
     animation: float 3s ease-in-out infinite;
   }
   
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out;
+  }
+  
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
+  }
+
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scale-in {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Custom hover effects */
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 113, 206, 0.5);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+  }
+
+  .click-bounce:active {
+    transform: scale(0.95);
   }
 }
