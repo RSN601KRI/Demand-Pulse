@@ -53,7 +53,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    background: linear-gradient(135deg, #001b3d 0%, #0071ce 25%, #004c91 75%, #001b3d 100%);
     min-height: 100vh;
   }
 
@@ -62,7 +62,7 @@
   }
 
   .walmart-gradient {
-    background: linear-gradient(135deg, #0071ce 0%, #004c91 100%);
+    background: linear-gradient(135deg, #0071ce 0%, #004c91 50%, #ffc220 100%);
   }
 }
 
@@ -72,11 +72,11 @@
   }
   
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
   }
   
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-10px); }
   }
 }

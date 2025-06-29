@@ -33,6 +33,9 @@ export default {
 					blue: '#0071ce',
 					'blue-dark': '#004c91',
 					'blue-light': '#4f98cd',
+					yellow: '#ffc220',
+					'yellow-dark': '#ffb000',
+					navy: '#001b3d',
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -74,21 +77,22 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'walmart-gradient': 'linear-gradient(135deg, #0071ce 0%, #004c91 100%)',
+				'walmart-gradient': 'linear-gradient(135deg, #0071ce 0%, #004c91 50%, #ffc220 100%)',
+				'walmart-blue-gradient': 'linear-gradient(135deg, #0071ce 0%, #004c91 100%)',
 				'glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%)',
 			},
 			backdropBlur: {
 				'xs': '2px',
 			},
 			animation: {
-				'float': 'float 6s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
 				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 				'bounce-slow': 'bounce 3s infinite',
 			},
 			keyframes: {
 				float: {
 					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-20px)' },
+					'50%': { transform: 'translateY(-10px)' },
 				},
 			},
 			borderRadius: {

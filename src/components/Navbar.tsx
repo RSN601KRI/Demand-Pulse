@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Brain, BarChart3, Zap } from "lucide-react";
+import { Menu, X, Brain, BarChart3, Zap, ShoppingCart } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -23,16 +23,17 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-walmart-gradient rounded-lg flex items-center justify-center animate-pulse-slow">
-              <Brain className="w-6 h-6 text-white" />
+            <div className="relative w-12 h-12">
+              <div className="absolute inset-0 bg-walmart-gradient rounded-xl flex items-center justify-center animate-pulse-slow shadow-lg">
+                <ShoppingCart className="w-6 h-6 text-white animate-float" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full animate-bounce"></div>
+              <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
             </div>
             <div>
               <h1 className="text-2xl font-cursive font-bold text-white">
                 DemandPulse
               </h1>
-              <p className="text-xs text-blue-200 -mt-1">
-                Transforming Retail Supply Chains
-              </p>
             </div>
           </Link>
 
@@ -58,9 +59,11 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-walmart-gradient hover:scale-105 transition-transform duration-300 shadow-lg">
-              Get Started
-            </Button>
+            <Link to="/login">
+              <Button className="bg-walmart-gradient hover:scale-105 transition-transform duration-300 shadow-lg">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,9 +99,11 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <Button className="w-full bg-walmart-gradient mt-4">
-                Get Started
-              </Button>
+              <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full bg-walmart-gradient mt-4">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         )}
