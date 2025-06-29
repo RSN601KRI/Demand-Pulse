@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -347,9 +346,9 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        {/* Main Dashboard */}
+        {/* Main Dashboard - Updated with consistent theming */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+          <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
             Interactive Dashboard
           </h2>
           <p className="text-xl text-blue-200 mb-8 hover:text-blue-100 transition-colors duration-300">
@@ -357,7 +356,7 @@ const Index = () => {
           </p>
         </div>
 
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full mb-12">
           <TabsList className="grid w-full grid-cols-4 mb-8 glass-effect">
             <TabsTrigger value="dashboard" className="data-[state=active]:bg-walmart-blue hover:scale-105 transition-transform duration-200">
               <BarChart3 className="w-4 h-4 mr-2" />
@@ -506,40 +505,38 @@ const Index = () => {
           </TabsContent>
         </Tabs>
 
-        {/* Mission Quote Section */}
-        <div className="mt-16 mb-16">
-          <Card className="glass-effect text-white hover:scale-105 hover:shadow-2xl transition-all duration-500 group border-2 border-walmart-blue/30 hover:border-walmart-yellow/50">
-            <CardContent className="p-12 text-center">
-              <div className="mb-6">
-                <Globe className="w-16 h-16 mx-auto text-walmart-blue group-hover:text-walmart-yellow group-hover:animate-pulse transition-colors duration-300" />
-              </div>
-              <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6 group-hover:text-walmart-yellow transition-colors duration-300">
-                Join Our Mission
-              </h3>
-              <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8 group-hover:text-white transition-colors duration-300">
-                "Turning data into action for a <span className="text-walmart-yellow font-semibold">smarter, faster supply chain</span> — 
-                Walmart DemandPulse powers the future of retail intelligence."
-              </blockquote>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg" 
-                  className="bg-walmart-gradient hover:scale-110 transition-all duration-300 shadow-2xl px-8 py-4 text-lg"
-                >
-                  <Brain className="w-5 h-5 mr-2" />
-                  Start Your Journey
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 hover:scale-110 transition-all duration-300 px-8 py-4 text-lg"
-                >
-                  <Globe className="w-5 h-5 mr-2" />
-                  Learn More
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Mission Quote Section - Updated with consistent theming */}
+        <Card className="glass-effect text-white hover:scale-105 hover:shadow-2xl transition-all duration-500 group border-2 border-walmart-blue/30 hover:border-walmart-yellow/50">
+          <CardContent className="p-12 text-center">
+            <div className="mb-6">
+              <Globe className="w-16 h-16 mx-auto text-walmart-blue group-hover:text-walmart-yellow group-hover:animate-pulse transition-colors duration-300" />
+            </div>
+            <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6 group-hover:text-walmart-yellow transition-colors duration-300">
+              Join Our Mission
+            </h3>
+            <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8 group-hover:text-white transition-colors duration-300">
+              "Turning data into action for a <span className="text-walmart-yellow font-semibold">smarter, faster supply chain</span> — 
+              Walmart DemandPulse powers the future of retail intelligence."
+            </blockquote>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg" 
+                className="bg-walmart-gradient hover:scale-110 transition-all duration-300 shadow-2xl px-8 py-4 text-lg"
+              >
+                <Brain className="w-5 h-5 mr-2" />
+                Start Your Journey
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 hover:scale-110 transition-all duration-300 px-8 py-4 text-lg"
+              >
+                <Globe className="w-5 h-5 mr-2" />
+                Learn More
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       <Footer />
