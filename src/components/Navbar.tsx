@@ -2,23 +2,27 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Brain, BarChart3, Zap } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { name: "Dashboard", icon: BarChart3 },
-    { name: "Analytics", icon: Brain },
-    { name: "Forecasting", icon: Zap },
-    { name: "Reports", icon: BarChart3 },
+    { name: "Dashboard", icon: BarChart3, path: "/dashboard" },
+    { name: "Analytics", icon: Brain, path: "/analytics" },
+    { name: "Forecasting", icon: Zap, path: "/forecasting" },
+    { name: "Reports", icon: BarChart3, path: "/reports" },
   ];
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-walmart-gradient rounded-lg flex items-center justify-center animate-pulse-slow">
               <Brain className="w-6 h-6 text-white" />
             </div>
@@ -30,21 +34,24 @@ const Navbar = () => {
                 Transforming Retail Supply Chains
               </p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
-                <Button
-                  key={item.name}
-                  variant="ghost"
-                  className="text-white hover:bg-white/10 hover:text-walmart-blue transition-all duration-300"
-                >
-                  <Icon className="w-4 h-4 mr-2" />
-                  {item.name}
-                </Button>
+                <Link key={item.name} to={item.path}>
+                  <Button
+                    variant="ghost"
+                    className={`text-white hover:bg-white/10 hover:text-walmart-blue transition-all duration-300 ${
+                      isActive(item.path) ? 'bg-walmart-blue text-white' : ''
+                    }`}
+                  >
+                    <Icon className="w-4 h-4 mr-2" />
+                    {item.name}
+                  </Button>
+                </Link>
               );
             })}
           </div>
@@ -76,14 +83,17 @@ const Navbar = () => {
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <Button
-                    key={item.name}
-                    variant="ghost"
-                    className="w-full justify-start text-white hover:bg-white/10 hover:text-walmart-blue"
-                  >
-                    <Icon className="w-4 h-4 mr-2" />
-                    {item.name}
-                  </Button>
+                  <Link key={item.name} to={item.path} onClick={() => setIsMenuOpen(false)}>
+                    <Button
+                      variant="ghost"
+                      className={`w-full justify-start text-white hover:bg-white/10 hover:text-walmart-blue ${
+                        isActive(item.path) ? 'bg-walmart-blue text-white' : ''
+                      }`}
+                    >
+                      <Icon className="w-4 h-4 mr-2" />
+                      {item.name}
+                    </Button>
+                  </Link>
                 );
               })}
               <Button className="w-full bg-walmart-gradient mt-4">
