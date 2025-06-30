@@ -1,10 +1,11 @@
+
 import { Brain, Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-slate-900/50 backdrop-blur-sm border-t border-white/10 mt-16">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
@@ -65,25 +66,6 @@ const Footer = () => {
               <li><a href="#" className="text-blue-200 hover:text-walmart-blue transition-colors">Press</a></li>
               <li><a href="#" className="text-blue-200 hover:text-walmart-blue transition-colors">Partners</a></li>
             </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-cursive text-lg font-semibold text-white mb-4">Contact</h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-2 text-blue-200">
-                <Mail className="w-4 h-4" />
-                <span>hello@demandpulse.ai</span>
-              </div>
-              <div className="flex items-center gap-2 text-blue-200">
-                <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-2 text-blue-200">
-                <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
-              </div>
-            </div>
           </div>
         </div>
 
