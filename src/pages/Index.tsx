@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -298,48 +299,48 @@ const Index = () => {
         </div>
 
         {/* Use Case Scenario Highlight */}
-        <Card className="glass-effect text-white mb-16 hover:scale-105 hover:shadow-2xl transition-all duration-300 group">
+        <Card className="glass-effect text-white mb-16">
           <CardHeader>
-            <CardTitle className="text-walmart-blue text-center text-2xl group-hover:text-walmart-yellow transition-colors duration-300">
+            <CardTitle className="text-walmart-blue text-center text-2xl">
               📣 Real-World Scenario
             </CardTitle>
-            <CardDescription className="text-center text-blue-200 text-lg group-hover:text-blue-100 transition-colors duration-300">
+            <CardDescription className="text-center text-blue-200 text-lg">
               How a Walmart Store Manager in Texas uses DemandPulse
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                  <BarChart3 className="w-8 h-8 text-white hover:animate-pulse" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BarChart3 className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">Logs In</h3>
                 <p className="text-sm text-blue-200">Manager sees dashboard alert</p>
               </div>
-              <div className="text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-white hover:animate-pulse" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">Forecast Alert</h3>
                 <p className="text-sm text-blue-200">"Milk demand to spike 40% next week"</p>
               </div>
-              <div className="text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                  <MessageSquare className="w-8 h-8 text-white hover:animate-pulse" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageSquare className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">AI Explanation</h3>
                 <p className="text-sm text-blue-200">"Due to Independence Day + heatwave"</p>
               </div>
-              <div className="text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                  <Package className="w-8 h-8 text-white hover:animate-pulse" />
+              <div className="text-center">
+                <div className="w-16 h-16 bg-walmart-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Package className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">Smart Action</h3>
                 <p className="text-sm text-blue-200">System suggests pulling 500 units from AZ stores</p>
               </div>
             </div>
             <div className="text-center mt-8">
-              <Badge className="bg-green-500/20 text-green-400 text-lg px-4 py-2 hover:bg-green-500/30 hover:scale-105 transition-all duration-300">
+              <Badge className="bg-green-500/20 text-green-400 text-lg px-4 py-2">
                 Result: Saves thousands in waste and increases sales
               </Badge>
             </div>
@@ -348,29 +349,29 @@ const Index = () => {
 
         {/* Main Dashboard - Updated with consistent theming */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+          <h2 className="text-4xl font-cursive font-bold text-white mb-4">
             Interactive Dashboard
           </h2>
-          <p className="text-xl text-blue-200 mb-8 hover:text-blue-100 transition-colors duration-300">
+          <p className="text-xl text-blue-200 mb-8">
             Experience the power of AI-driven retail analytics
           </p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full mb-12">
           <TabsList className="grid w-full grid-cols-4 mb-8 glass-effect">
-            <TabsTrigger value="dashboard" className="data-[state=active]:bg-walmart-blue hover:scale-105 transition-transform duration-200">
+            <TabsTrigger value="dashboard" className="data-[state=active]:bg-walmart-blue">
               <BarChart3 className="w-4 h-4 mr-2" />
               Dashboard
             </TabsTrigger>
-            <TabsTrigger value="forecasting" className="data-[state=active]:bg-walmart-blue hover:scale-105 transition-transform duration-200">
+            <TabsTrigger value="forecasting" className="data-[state=active]:bg-walmart-blue">
               <TrendingUp className="w-4 h-4 mr-2" />
               Forecasting
             </TabsTrigger>
-            <TabsTrigger value="inventory" className="data-[state=active]:bg-walmart-blue hover:scale-105 transition-transform duration-200">
+            <TabsTrigger value="inventory" className="data-[state=active]:bg-walmart-blue">
               <Package className="w-4 h-4 mr-2" />
               Inventory
             </TabsTrigger>
-            <TabsTrigger value="insights" className="data-[state=active]:bg-walmart-blue hover:scale-105 transition-transform duration-200">
+            <TabsTrigger value="insights" className="data-[state=active]:bg-walmart-blue">
               <Brain className="w-4 h-4 mr-2" />
               AI Insights
             </TabsTrigger>
@@ -385,22 +386,22 @@ const Index = () => {
 
           <TabsContent value="forecasting">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <Card className="glass-effect text-white hover:scale-105 hover:shadow-xl transition-all duration-300 group">
+              <Card className="glass-effect text-white">
                 <CardHeader>
-                  <CardTitle className="text-walmart-blue group-hover:text-walmart-yellow transition-colors duration-300">7-Day Forecast</CardTitle>
-                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors duration-300">Short-term demand prediction</CardDescription>
+                  <CardTitle className="text-walmart-blue">7-Day Forecast</CardTitle>
+                  <CardDescription className="text-blue-200">Short-term demand prediction</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex justify-between items-center">
                       <span>Electronics</span>
                       <Badge variant="secondary" className="bg-green-500/20 text-green-400">+12%</Badge>
                     </div>
-                    <div className="flex justify-between items-center hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex justify-between items-center">
                       <span>Clothing</span>
                       <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-400">+5%</Badge>
                     </div>
-                    <div className="flex justify-between items-center hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex justify-between items-center">
                       <span>Groceries</span>
                       <Badge variant="secondary" className="bg-red-500/20 text-red-400">-3%</Badge>
                     </div>
@@ -408,38 +409,38 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="glass-effect text-white hover:scale-105 hover:shadow-xl transition-all duration-300 group">
+              <Card className="glass-effect text-white">
                 <CardHeader>
-                  <CardTitle className="text-walmart-blue group-hover:text-walmart-yellow transition-colors duration-300">30-Day Outlook</CardTitle>
-                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors duration-300">Medium-term trends</CardDescription>
+                  <CardTitle className="text-walmart-blue">30-Day Outlook</CardTitle>
+                  <CardDescription className="text-blue-200">Medium-term trends</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
-                    <div className="text-2xl font-bold text-green-400 hover:scale-110 transition-transform duration-300">+18.5%</div>
+                    <div className="text-2xl font-bold text-green-400">+18.5%</div>
                     <p className="text-sm text-blue-200">Overall demand increase expected</p>
-                    <div className="h-2 bg-slate-700 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
+                    <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-walmart-blue to-green-400 w-3/4"></div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="glass-effect text-white hover:scale-105 hover:shadow-xl transition-all duration-300 group">
+              <Card className="glass-effect text-white">
                 <CardHeader>
-                  <CardTitle className="text-walmart-blue group-hover:text-walmart-yellow transition-colors duration-300">Seasonal Trends</CardTitle>
-                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors duration-300">Holiday & event impact</CardDescription>
+                  <CardTitle className="text-walmart-blue">Seasonal Trends</CardTitle>
+                  <CardDescription className="text-blue-200">Holiday & event impact</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-yellow-400" />
                       <span className="text-sm">Back-to-School Peak</span>
                     </div>
-                    <div className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-blue-400" />
                       <span className="text-sm">Holiday Prep Phase</span>
                     </div>
-                    <div className="flex items-center gap-2 hover:translate-x-2 transition-transform duration-200">
+                    <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-green-400" />
                       <span className="text-sm">Summer Clearance</span>
                     </div>
@@ -453,41 +454,41 @@ const Index = () => {
             <div className="space-y-8">
               <InventoryGrid />
               
-              <Card className="glass-effect text-white hover:scale-105 hover:shadow-xl transition-all duration-300 group">
+              <Card className="glass-effect text-white">
                 <CardHeader>
-                  <CardTitle className="text-walmart-blue group-hover:text-walmart-yellow transition-colors duration-300">Reallocation Recommendations</CardTitle>
-                  <CardDescription className="text-blue-200 group-hover:text-blue-100 transition-colors duration-300">
+                  <CardTitle className="text-walmart-blue">Reallocation Recommendations</CardTitle>
+                  <CardDescription className="text-blue-200">
                     AI-powered inventory optimization suggestions
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div className="p-4 bg-blue-500/10 rounded-lg border border-blue-500/20 hover:bg-blue-500/20 hover:scale-105 transition-all duration-300">
+                    <div className="p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
                       <h4 className="font-semibold text-blue-400 mb-2">High Priority</h4>
                       <p className="text-sm text-blue-200 mb-3">
                         Move 500 units of Winter Coats from Store A to Store B
                       </p>
-                      <Button size="sm" className="bg-walmart-blue hover:bg-walmart-blue-dark hover:scale-105 transition-all duration-300">
+                      <Button size="sm" className="bg-walmart-blue hover:bg-walmart-blue-dark">
                         Execute Transfer
                       </Button>
                     </div>
                     
-                    <div className="p-4 bg-yellow-500/10 rounded-lg border border-yellow-500/20 hover:bg-yellow-500/20 hover:scale-105 transition-all duration-300">
+                    <div className="p-4 bg-yellow-500/10 rounded-lg border border-yellow-500/20">
                       <h4 className="font-semibold text-yellow-400 mb-2">Medium Priority</h4>
                       <p className="text-sm text-yellow-200 mb-3">
                         Increase Electronics stock by 200 units for holiday season
                       </p>
-                      <Button size="sm" variant="outline" className="border-yellow-500/50 text-yellow-400 hover:scale-105 transition-all duration-300">
+                      <Button size="sm" variant="outline" className="border-yellow-500/50 text-yellow-400">
                         Schedule Order
                       </Button>
                     </div>
                     
-                    <div className="p-4 bg-green-500/10 rounded-lg border border-green-500/20 hover:bg-green-500/20 hover:scale-105 transition-all duration-300">
+                    <div className="p-4 bg-green-500/10 rounded-lg border border-green-500/20">
                       <h4 className="font-semibold text-green-400 mb-2">Optimization</h4>
                       <p className="text-sm text-green-200 mb-3">
                         Reduce Seasonal items by 15% to free up warehouse space
                       </p>
-                      <Button size="sm" variant="outline" className="border-green-500/50 text-green-400 hover:scale-105 transition-all duration-300">
+                      <Button size="sm" variant="outline" className="border-green-500/50 text-green-400">
                         Review Plan
                       </Button>
                     </div>
@@ -506,22 +507,22 @@ const Index = () => {
         </Tabs>
 
         {/* Mission Quote Section - Updated with consistent theming */}
-        <Card className="glass-effect text-white hover:scale-105 hover:shadow-2xl transition-all duration-500 group border-2 border-walmart-blue/30 hover:border-walmart-yellow/50">
+        <Card className="glass-effect text-white border-2 border-walmart-blue/30">
           <CardContent className="p-12 text-center">
             <div className="mb-6">
-              <Globe className="w-16 h-16 mx-auto text-walmart-blue group-hover:text-walmart-yellow group-hover:animate-pulse transition-colors duration-300" />
+              <Globe className="w-16 h-16 mx-auto text-walmart-blue" />
             </div>
-            <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6 group-hover:text-walmart-yellow transition-colors duration-300">
+            <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6">
               Join Our Mission
             </h3>
-            <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8 group-hover:text-white transition-colors duration-300">
+            <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8">
               "Turning data into action for a <span className="text-walmart-yellow font-semibold">smarter, faster supply chain</span> — 
               Walmart DemandPulse powers the future of retail intelligence."
             </blockquote>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-walmart-gradient hover:scale-110 transition-all duration-300 shadow-2xl px-8 py-4 text-lg"
+                className="bg-walmart-gradient px-8 py-4 text-lg"
               >
                 <Brain className="w-5 h-5 mr-2" />
                 Start Your Journey
@@ -529,7 +530,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 hover:scale-110 transition-all duration-300 px-8 py-4 text-lg"
+                className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 px-8 py-4 text-lg"
               >
                 <Globe className="w-5 h-5 mr-2" />
                 Learn More
