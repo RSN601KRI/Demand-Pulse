@@ -1,4 +1,3 @@
-
 import { Brain, Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
 
 const Footer = () => {
@@ -9,8 +8,14 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-walmart-gradient rounded-lg flex items-center justify-center">
-                <Brain className="w-6 h-6 text-white" />
+              <div className="relative w-10 h-10 group">
+                <div className="absolute inset-0 rounded-full overflow-hidden shadow-lg border-2 border-white/20 group-hover:border-walmart-yellow/50 transition-all duration-300">
+                  <img 
+                    src="/lovable-uploads/30dea120-660c-498b-a5e8-e8b2be5bdb33.png" 
+                    alt="DemandPulse Logo" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
               </div>
               <div>
                 <h3 className="text-2xl font-cursive font-bold text-white">
