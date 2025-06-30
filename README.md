@@ -1,73 +1,79 @@
-# Welcome to your Lovable project
+#  **Transforming Retail Supply Chains with AI-Powered Demand Forecasting & Generative Insights**  
 
-## Project info
+![WS](https://github.com/user-attachments/assets/89fb43ad-3f7a-43f9-9a09-08f132603ecb)
 
-**URL**: https://lovable.dev/projects/221dadee-57a5-4550-87d6-a2b2da5dca7a
+🚀 Built by Team InnovaX | Hackathon: Walmart Sparkathon 2025
 
-## How can I edit this code?
+**Walmart DemandPulse** is an AI-powered retail intelligence platform that predicts demand, explains trends using generative AI, and optimizes inventory allocation across stores to reduce waste and improve customer satisfaction.
 
-There are several ways of editing your application.
+## 📌 Problem Statement
 
-**Use Lovable**
+Walmart faces persistent challenges with product overstocking and understocking, particularly during seasonal peaks and promotions. These imbalances lead to revenue loss, customer dissatisfaction, and operational inefficiencies in last-mile delivery and fulfilment.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/221dadee-57a5-4550-87d6-a2b2da5dca7a) and start prompting.
+According to industry reports, inefficiencies in supply chains cost retailers billions, and the AI in the supply chain market is projected to exceed $45 billion by 2030, highlighting the urgent need for intelligent, localised demand planning.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💡 Our Solution
 
-**Use your preferred IDE**
+**DemandPulse** addresses these challenges by offering a comprehensive AI-powered dashboard that provides:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 📈 **ML-Based Forecasting**: Predict SKU-level demand at regional/store level using models like Prophet and LSTM.
+- 🤖 **Generative AI Insights**: Get simple, human-friendly explanations for demand spikes through a built-in chatbot.
+- 🔄 **Inventory Optimisation**: Receive real-time recommendations for stock reallocation between stores to reduce mismatch.
+- 📊 **Visual Analytics**: Interactive graphs, trend lines, and actionable summaries for managers.
+- 💬 **Real-Time Insights**: Query the system to gain a deeper understanding of product trends, risks, and future outlooks.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧰 Tech Stack
 
-Follow these steps:
+| Layer        | Tools/Frameworks                             |
+|--------------|-----------------------------------------------|
+| Frontend     | React, Tailwind CSS                           |
+| Backend      | FastAPI (Python), REST APIs                   |
+| ML Models    | Prophet, LSTM (for time series forecasting)   |
+| GenAI        | Gemini Pro / GPT-4 APIs (for explanation/chat)|
+| Visualization| Chart.js / Recharts                          |
+| Cloud        | AWS / GCP (Cloud Run, BigQuery, SageMaker)    |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🖥️ Features Preview
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- 📊 Demand Forecast Charts
+- 💬 AI-powered Chat Assistant
+- 🔁 Stock Reallocation Planner
+- 📍 Region-wise SKU Forecasting
+- 🧠 Natural Language Demand Summaries
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎯 Impact & Benefits
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- ✅ Improved customer satisfaction with in-stock products  
+- ✅ Reduced waste and markdowns from overstock  
+- ✅ Smarter, faster decisions at the local store level  
+- ✅ High scalability across Walmart’s global infrastructure 
 
-**Edit a file directly in GitHub**
+## 📹 Demo Video
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🔗 [Watch the 2-Minute Demo](https://youtu.be/your-demo-link)
 
-**Use GitHub Codespaces**
+## 🤝 Built By
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Team InnovaX**  
+- Roshni Kumari – Lead Developer & AI/ML Engineer ([LinkedIn](https://www.linkedin.com/in/roshnikumari1) | [GitHub](https://github.com/RSN601KRI))
 
-## What technologies are used for this project?
+## 🏁 Getting Started (Optional Setup Instructions)
 
-This project is built with:
+```bash
+git clone https://github.com/your-username/demandpulse.git
+cd demandpulse
+# Start frontend
+cd frontend
+npm install
+npm start
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Start backend
+cd ../backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+````
 
-## How can I deploy this project?
+## 🌟 Let’s Make Retail Smarter
 
-Simply open [Lovable](https://lovable.dev/projects/221dadee-57a5-4550-87d6-a2b2da5dca7a) and click on Share -> Publish.
+> “DemandPulse helps Walmart turn real-time demand into real-time action — keeping shelves stocked, waste low, and customers happy.”
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
