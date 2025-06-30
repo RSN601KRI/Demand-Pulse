@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -136,10 +135,10 @@ const Index = () => {
       {/* Features Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+          <h2 className="text-4xl font-cursive font-bold text-white mb-4">
             Powerful Features
           </h2>
-          <p className="text-xl text-blue-200 mb-8 hover:text-blue-100 transition-colors duration-300">
+          <p className="text-xl text-blue-200 mb-8">
             AI-powered solutions for modern retail supply chain management
           </p>
         </div>
@@ -183,10 +182,10 @@ const Index = () => {
         {/* Use Cases Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-cursive font-bold text-white mb-4">
               Real-World Use Cases
             </h2>
-            <p className="text-xl text-blue-200 hover:text-blue-100 transition-colors duration-300">
+            <p className="text-xl text-blue-200">
               See how DemandPulse transforms retail operations
             </p>
           </div>
@@ -222,10 +221,10 @@ const Index = () => {
         {/* Flow Diagram Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-cursive font-bold text-white mb-4">
               How It Works
             </h2>
-            <p className="text-xl text-blue-200 hover:text-blue-100 transition-colors duration-300">
+            <p className="text-xl text-blue-200">
               Our AI-powered process in four simple steps
             </p>
           </div>
@@ -263,10 +262,10 @@ const Index = () => {
         {/* Who Can Use It Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-cursive font-bold text-white mb-4 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-cursive font-bold text-white mb-4">
               Who Can Use It
             </h2>
-            <p className="text-xl text-blue-200 hover:text-blue-100 transition-colors duration-300">
+            <p className="text-xl text-blue-200">
               Designed for retail professionals at every level
             </p>
           </div>
@@ -386,67 +385,61 @@ const Index = () => {
 
           <TabsContent value="forecasting">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <Card className="glass-effect text-white">
-                <CardHeader>
-                  <CardTitle className="text-walmart-blue">7-Day Forecast</CardTitle>
-                  <CardDescription className="text-blue-200">Short-term demand prediction</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span>Electronics</span>
-                      <Badge variant="secondary" className="bg-green-500/20 text-green-400">+12%</Badge>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Clothing</span>
-                      <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-400">+5%</Badge>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Groceries</span>
-                      <Badge variant="secondary" className="bg-red-500/20 text-red-400">-3%</Badge>
-                    </div>
+              <div className="glass-effect text-white rounded-lg p-6">
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-walmart-blue mb-2">7-Day Forecast</h3>
+                  <p className="text-blue-200">Short-term demand prediction</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span>Electronics</span>
+                    <Badge variant="secondary" className="bg-green-500/20 text-green-400">+12%</Badge>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="flex justify-between items-center">
+                    <span>Clothing</span>
+                    <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-400">+5%</Badge>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>Groceries</span>
+                    <Badge variant="secondary" className="bg-red-500/20 text-red-400">-3%</Badge>
+                  </div>
+                </div>
+              </div>
 
-              <Card className="glass-effect text-white">
-                <CardHeader>
-                  <CardTitle className="text-walmart-blue">30-Day Outlook</CardTitle>
-                  <CardDescription className="text-blue-200">Medium-term trends</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="text-2xl font-bold text-green-400">+18.5%</div>
-                    <p className="text-sm text-blue-200">Overall demand increase expected</p>
-                    <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
-                      <div className="h-full bg-gradient-to-r from-walmart-blue to-green-400 w-3/4"></div>
-                    </div>
+              <div className="glass-effect text-white rounded-lg p-6">
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-walmart-blue mb-2">30-Day Outlook</h3>
+                  <p className="text-blue-200">Medium-term trends</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="text-2xl font-bold text-green-400">+18.5%</div>
+                  <p className="text-sm text-blue-200">Overall demand increase expected</p>
+                  <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-walmart-blue to-green-400 w-3/4"></div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card className="glass-effect text-white">
-                <CardHeader>
-                  <CardTitle className="text-walmart-blue">Seasonal Trends</CardTitle>
-                  <CardDescription className="text-blue-200">Holiday & event impact</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-yellow-400" />
-                      <span className="text-sm">Back-to-School Peak</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-blue-400" />
-                      <span className="text-sm">Holiday Prep Phase</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-green-400" />
-                      <span className="text-sm">Summer Clearance</span>
-                    </div>
+              <div className="glass-effect text-white rounded-lg p-6">
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold text-walmart-blue mb-2">Seasonal Trends</h3>
+                  <p className="text-blue-200">Holiday & event impact</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-400" />
+                    <span className="text-sm">Back-to-School Peak</span>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-blue-400" />
+                    <span className="text-sm">Holiday Prep Phase</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-green-400" />
+                    <span className="text-sm">Summer Clearance</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </TabsContent>
 
@@ -506,38 +499,36 @@ const Index = () => {
           </TabsContent>
         </Tabs>
 
-        {/* Mission Quote Section - Updated with consistent theming */}
-        <Card className="glass-effect text-white border-2 border-walmart-blue/30">
-          <CardContent className="p-12 text-center">
-            <div className="mb-6">
-              <Globe className="w-16 h-16 mx-auto text-walmart-blue" />
-            </div>
-            <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6">
-              Join Our Mission
-            </h3>
-            <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8">
-              "Turning data into action for a <span className="text-walmart-yellow font-semibold">smarter, faster supply chain</span> — 
-              Walmart DemandPulse powers the future of retail intelligence."
-            </blockquote>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-walmart-gradient px-8 py-4 text-lg"
-              >
-                <Brain className="w-5 h-5 mr-2" />
-                Start Your Journey
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 px-8 py-4 text-lg"
-              >
-                <Globe className="w-5 h-5 mr-2" />
-                Learn More
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Mission Quote Section - Removed Card wrapper */}
+        <div className="glass-effect text-white border-2 border-walmart-blue/30 rounded-lg p-12 text-center">
+          <div className="mb-6">
+            <Globe className="w-16 h-16 mx-auto text-walmart-blue" />
+          </div>
+          <h3 className="text-3xl font-cursive font-bold text-walmart-blue mb-6">
+            Join Our Mission
+          </h3>
+          <blockquote className="text-xl md:text-2xl text-blue-100 leading-relaxed mb-8">
+            "Turning data into action for a <span className="text-walmart-yellow font-semibold">smarter, faster supply chain</span> — 
+            Walmart DemandPulse powers the future of retail intelligence."
+          </blockquote>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-walmart-gradient px-8 py-4 text-lg"
+            >
+              <Brain className="w-5 h-5 mr-2" />
+              Start Your Journey
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-walmart-blue/50 text-walmart-blue hover:bg-walmart-blue/10 px-8 py-4 text-lg"
+            >
+              <Globe className="w-5 h-5 mr-2" />
+              Learn More
+            </Button>
+          </div>
+        </div>
       </div>
 
       <Footer />
