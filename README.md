@@ -56,7 +56,7 @@ According to industry reports, inefficiencies in supply chains cost retailers bi
 
 **Team InnovaX**  
 - Roshni Kumari – Lead Developer & AI/ML Engineer ([LinkedIn](https://www.linkedin.com/in/roshnikumari1) | [GitHub](https://github.com/RSN601KRI))
-- Chanchal Kuntal - MERN Developer ([Linkedin](https://www.linkedin.com/in/chanchal-kuntal-6b5506251/)
+- Chanchal Kuntal - MERN Developer ([Linkedin](https://www.linkedin.com/in/chanchal-kuntal-6b5506251/))
 
 ## 🏁 Getting Started (Optional Setup Instructions)
 
