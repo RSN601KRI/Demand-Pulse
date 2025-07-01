@@ -50,7 +50,7 @@ According to industry reports, inefficiencies in supply chains cost retailers bi
 
 ## 📹 Demo Video
 
-🔗 [Watch the 2-Minute Demo](https://youtu.be/your-demo-link)
+🔗 [Watch the 2-Minute Demo](https://youtu.be/p2o-11CSZYo)
 
 ## 🤝 Built By
 
